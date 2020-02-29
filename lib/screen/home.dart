@@ -285,7 +285,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
               Expanded(
                 flex: 3,
                 child: Container(
-                  height: 400,
                   width: 180,
                   child: FutureBuilder(
                     future: getImageUrl(ref),
@@ -335,9 +334,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
                       ),
 
                     ),
-                    width: 180,
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 5),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         crossAxisAlignment: CrossAxisAlignment.start,
